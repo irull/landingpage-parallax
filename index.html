@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Scrolling</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Logo</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#sec">About</a></li>
+        <li><a href="#sec">Work</a></li>
+        <li><a href="#sec">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="img/stars.png" id="stars" />
+      <img src="img/3_.png" id="atas" />
+      <img src="img/2_.png" id="tengah" />
+      <h2 id="text">Bromo</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="img/1_.png" id="bawah" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>
+        Gunung Bromo (dari bahasa Sanskerta: Brahma, salah seorang Dewa Utama
+        dalam agama Hindu)
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quasi
+        amet autem provident eveniet nesciunt aliquam laborum molestiae est aut
+        consequuntur, nam sed deleniti quibusdam minus corrupti placeat tenetur
+        ex.. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Doloremque vero molestiae culpa explicabo omnis eius delectus ad quod
+        officia commodi vel reprehenderit aut velit possimus, voluptatum amet,
+        voluptas ipsam? Unde.. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Ipsam vero, error facilis autem odit quas quidem.
+        Doloremque, rem in itaque inventore optio accusantium ipsum fugiat
+        eaque? Velit ducimus blanditiis vel?. <br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+        neque quis rem fugit consectetur. Ex, reiciendis incidunt dolorum
+        exercitationem, nam ad ipsam ea, dolores voluptates at eaque error
+        pariatur aliquam. ;Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Modi, excepturi officia recusandae dolorum obcaecati dignissimos,
+        facere sint magni molestiae perferendis alias delectus eligendi.
+        Eligendi nisi fugit, quo aliquid eos possimus?<br /><br />
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores rerum
+        dolorum est veritatis laboriosam, reiciendis aspernatur, dicta fugiat id
+        unde mollitia quos eum sint repellendus voluptate vero omnis odio qui.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+        reprehenderit laborum maxime sapiente, pariatur perferendis placeat ex
+        magnam natus inventore omnis porro eius deleniti et beatae consequuntur
+        impedit asperiores. Ducimus? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Praesentium aspernatur, saepe enim dolor excepturi quo
+        optio. Sint quam labore dolorem itaque, incidunt perspiciatis
+        repellendus atque ratione optio velit, repellat blanditiis.<br /><br />
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores rerum
+        dolorum est veritatis laboriosam, reiciendis aspernatur, dicta fugiat id
+        unde mollitia quos eum sint repellendus voluptate vero omnis odio qui.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+        reprehenderit laborum maxime sapiente, pariatur perferendis placeat ex
+        magnam natus inventore omnis porro eius deleniti et beatae consequuntur
+        impedit asperiores. Ducimus? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Praesentium aspernatur, saepe enim dolor excepturi quo
+        optio. Sint quam labore dolorem itaque, incidunt perspiciatis
+        repellendus atque ratione optio velit, repellat blanditiis.br <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+        neque quis rem fugit consectetur. Ex, reiciendis incidunt dolorum
+        exercitationem, nam ad ipsam ea, dolores voluptates at eaque error
+        pariatur aliquam. ;Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Modi, excepturi officia recusandae dolorum obcaecati dignissimos,
+        facere sint magni molestiae perferendis alias delectus eligendi.
+      </p>
+    </div>
+
+    <script>
+      let stars = document.getElementById("stars");
+      let atas = document.getElementById("atas");
+      let tengah = document.getElementById("tengah");
+      let text = document.getElementById("text");
+      let btn = document.getElementById("btn");
+      let bawah = document.getElementById("bawah");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + "px";
+        atas.style.top = value * 0.5 + "px";
+        tengah.style.top = value * 0.4 + "px";
+        bawah.style.top = value * 0.3 + "px";
+        // text.style.left = value * 1.5 + "px";
+      });
+    </script>
+  </body>
+</html>
